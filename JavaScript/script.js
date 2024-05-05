@@ -21,7 +21,7 @@ changeSlide();
 
 
 prev_btn.addEventListener('click',(e)=>{
-  //
+  //if n is greater than 0 it decrements n to display the previous image and if not it sets n to the index of the last image
   if(n>0){
     n--;
   } else {
@@ -30,6 +30,7 @@ prev_btn.addEventListener('click',(e)=>{
   changeSlide();
 })
 next_btn.addEventListener('click',(e)=>{
+  //if n is less than the index of the last image, it increments n to display the next image and if not it sets n to 0 to loop back to the first image
   if(n<imgs.length - 1){
     n++;
   } else {
