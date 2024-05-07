@@ -18,8 +18,6 @@ function changeSlide(){
 //immediately after defining the 'changeSlide' function this line calls it and ensures that when the script runs, it starts by displaying the first image.
 changeSlide();
 
-
-
 prev_btn.addEventListener('click',(e)=>{
   //if n is greater than 0 it decrements n to display the previous image and if not it sets n to the index of the last image
   if(n>0){
@@ -39,3 +37,14 @@ next_btn.addEventListener('click',(e)=>{
   changeSlide();
 })
 
+
+
+
+const scrollContainer = document.querySelectorAll("products");
+
+for (const item of scrollContainer){
+  item.addEventListener('wheel', (evt)=>{
+    evt.preventDefault();
+    item.scrollLeft += evt.deltaY;
+  })
+}
