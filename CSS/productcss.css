@@ -53,8 +53,45 @@ body{
 .product-rating p span{
   color: #fff;
   background: #c73500;
-  padding: 2px 50px ;
+  padding: 2px 5px ;
   border-radius: 3px;
   font-size: 14px;
 }
+.product-rating h5{
+  font-weight: 400;
+}
+.product-price{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.product-price div{
+  display: flex;
+  align-items: center;
+  gap:10px;
+  margin: 10px 0;
+}
+.product-price div p{
+  font-size: 26px;
+  color: #c73500;
+}
+.product-price div h1{
+  font-size: 14px;
+  font-weight: 500; 
+}
+.product-price div h1 span{
+  font-size: 26px;
+  font-weight: 500; 
+}
+.product-price h5{
+  color: #565656;
+  font-weight: 400;
+}
+.product-price h5 span{
+  text-decoration: line-through;
+}
+.product-price p span{
+  color:#007185;
+}
+
 
