@@ -54,6 +54,8 @@ if(n<imgs.length - 1){
 5. `changeSlide();`
    - After determining the new value of `n`, the code calls the `changeSlide()` function.
    - This function updates the display to show the image corresponding to the new value of `n`.
+
+     
 In summary, this block of code handles the logic for moving to the next image in the slider. It checks if there is a next image available, increments the index `n` if possible, or sets it to 0 if `n` is already at the index of the last image. Finally, it updates the display to reflect the new image.
 
 
