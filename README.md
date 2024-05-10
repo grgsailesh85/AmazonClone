@@ -22,7 +22,7 @@ In this section, we'll provide a brief overview of the main functionalities impl
    - If the condition `n > 0` is false, meaning there is no previous image (i.e., `n` is already at the first image), the code inside the `else` block is executed.
 4. `n = imgs.length - 1;`
    - In this case, the code sets the value of `n` to the index of the last image in the imgs array.
- - This effectively loops back to the last image when the previous button is clicked while viewing the first image.
+  - This effectively loops back to the last image when the previous button is clicked while viewing the first image.
 
    
 In summary, this block of code handles the logic for moving to the previous image in the slider. It checks if there is a previous image available, decrements the index n if possible, or sets it to the index of the last image if n is already at 0 (the first image). Finally, it updates the display to reflect the new image.
