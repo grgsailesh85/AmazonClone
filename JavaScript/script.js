@@ -19,14 +19,10 @@ function changeSlide(){
 changeSlide();
 
 prev_btn.addEventListener('click',(e)=>{
-  //this line checks if the value of n(the index of the currently displayed image) is greater than 0, if n is greater than 0, it means there is a previous image available to display
   if(n>0){
-    //if the condition n>0 is true, this line decrements the value of n by 1 and moves n to the index of the previous image in the imgs array 
     n--;
   }
-  //if the condition n>0 is false meaning there is no previous image (i.e n is already at the first image), the code inside the else block is executed
   else {
-    //the code sets the value of n to index of the last image inthe imgs array and this effectively loops back to the last image when the previous button is clicked while viewing the first image
     n = imgs.length-1;
   }
   changeSlide();
